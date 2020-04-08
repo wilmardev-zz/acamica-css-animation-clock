@@ -47,3 +47,48 @@
     transform: rotateZ(360deg);
   }
 }
+
+.light-theme, body {
+  color: #110038;    
+  background-color: #FFF4FD;
+}
+
+.light-theme .clock {
+  border-radius: 50%;
+  background: #fff url(/assets/images/ios_clock.svg) no-repeat center;
+  height: 20em;
+  padding-bottom: 31%;
+  position: absolute;
+  width: 20em;
+  transform: translate(-50% ,-50%);
+  top: 50%;
+  left: 50%;
+  color: red;
+}
+
+.dark-theme, body {
+  color: #FFFFFF;
+  background-color: #110038;
+}
+
+.dark-theme .clock {
+  border-radius: 50%;
+  background: rgb(0, 0, 0) url(/assets/images/ios_clock.svg) no-repeat center;
+  height: 20em;
+  padding-bottom: 31%;
+  position: absolute;
+  width: 20em;
+  transform: translate(-50% ,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+.dark-theme .seconds {
+  background: white;
+  width: 1.5%;
+  height: 19%;
+  position: absolute;
+  left: 49.25%;
+  top: 34%;
+  transform-origin: 85% 71%;
+}
